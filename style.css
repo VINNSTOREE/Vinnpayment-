@@ -1,105 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
 body {
+    background-color: #1b1b2f;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #0d0d0d;
-    color: white;
-    text-align: center;
 }
 
-/* Header */
-header {
-    padding: 20px;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    text-shadow: 0 0 10px #00c6ff;
-    box-shadow: 0px 4px 10px rgba(0, 198, 255, 0.5);
-}
-
-.glow-text {
-    font-size: 32px;
-    font-weight: bold;
-    text-shadow: 0 0 20px cyan, 0 0 30px blue;
-}
-
-/* Container */
-.payment-container {
-    width: 90%;
+.container {
     max-width: 400px;
     margin: 20px auto;
-    padding: 15px;
-    background: rgba(20, 20, 20, 0.9);
+    padding: 20px;
+    background: #162447;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 198, 255, 0.4);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    border: 2px solid #ffcc00;
 }
 
-/* Payment Card */
-.payment-card {
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff6600;
+}
+
+.payment-list {
+    margin-top: 10px;
+}
+
+.payment-item {
     display: flex;
     align-items: center;
-    background: #111;
+    justify-content: space-between;
+    background: #1f4068;
     padding: 10px;
-    border-radius: 10px;
-    margin: 15px 0;
-    border: 1px solid cyan;
-    box-shadow: 0px 0px 10px rgba(0, 198, 255, 0.5);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+    border: 1px solid #ffcc00;
 }
 
-.payment-card img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.payment-info {
-    flex: 1;
-    text-align: left;
-}
-
-.payment-info h3 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.highlight {
-    color: cyan;
+.icon {
+    width: 32px;
+    height: 32px;
+    background: radial-gradient(circle, #ffcc00, #ff6600);
+    color: black;
+    font-size: 16px;
     font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px #ffcc00;
 }
 
-/* Salin Text */
-.copy-text {
-    width: 100%;
-    padding: 8px;
-    background: #222;
-    color: white;
-    border: 1px solid cyan;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 5px;
+.name {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 0 0 5px #ffcc00;
+}
+
+.number {
+    font-size: 14px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffcc00;
 }
 
 .copy-btn {
-    margin-top: 5px;
-    padding: 8px 12px;
-    background: cyan;
+    background: linear-gradient(to right, #ffcc00, #ff6600);
     color: black;
     border: none;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.3s;
+    box-shadow: 0 0 5px #ff6600;
 }
 
 .copy-btn:hover {
-    background: #0072ff;
-    color: white;
+    background: linear-gradient(to right, #ff6600, #ffcc00);
+    box-shadow: 0 0 10px #ffcc00;
 }
 
-/* Footer */
-footer {
+.quick-qris {
     margin-top: 20px;
+    padding: 15px;
+    background: #1f4068;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    border: 1px solid #ffcc00;
+}
+
+.qris-btn {
+    width: 100%;
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    color: black;
+    border: none;
     padding: 10px;
-    font-size: 14px;
-    background: #111;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 5px #ffcc00;
+}
+
+.qris-btn:hover {
+    background: linear-gradient(to right, #ff6600, #ffcc00);
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+.notice {
+    margin-top: 20px;
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px #ffcc00;
 }
