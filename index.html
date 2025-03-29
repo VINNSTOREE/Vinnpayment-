@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment HanzX - Official</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="glow-text">Payment</h1>
+        <p>Selesaikan pembayaran Anda di sini</p>
+    </header>
+
+    <section class="payment-container">
+        <h2>Pilih Pembayaran</h2>
+        <p>Silakan pilih metode pembayaran yang Anda inginkan:</p>
+
+        <div class="payment-card">
+            <img src="qris.png" alt="QRIS">
+            <div class="payment-info">
+                <h3>QRIS <span class="highlight">QRIS</span></h3>
+                <p>Pindai kode QR di bawah ini untuk menyelesaikan pembayaran Anda.</p>
+            </div>
+        </div>
+
+        <div class="payment-card">
+            <img src="dana.png" alt="DANA">
+            <div class="payment-info">
+                <h3>DANA <span class="highlight">DANA</span></h3>
+                <input type="text" value="1234567890" class="copy-text" readonly>
+                <button class="copy-btn" onclick="copyText(this)">Salin</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Payment HanzX. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
