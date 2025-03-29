@@ -3,40 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment HanzX - Official</title>
+    <title>Payment Methods</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1 class="glow-text">Payment</h1>
-        <p>Selesaikan pembayaran Anda di sini</p>
-    </header>
+    <div class="container">
+        <h2 class="title">Payment Methods</h2>
 
-    <section class="payment-container">
-        <h2>Pilih Pembayaran</h2>
-        <p>Silakan pilih metode pembayaran yang Anda inginkan:</p>
+        <div class="payment-list">
+            <div class="payment-item">
+                <span class="icon">D</span>
+                <span class="name">Dana</span>
+                <span class="number">081359123789</span>
+                <button class="copy-btn" onclick="copyText('081359123789')">Copy</button>
+            </div>
 
-        <div class="payment-card">
-            <img src="qris.png" alt="QRIS">
-            <div class="payment-info">
-                <h3>QRIS <span class="highlight">QRIS</span></h3>
-                <p>Pindai kode QR di bawah ini untuk menyelesaikan pembayaran Anda.</p>
+            <div class="payment-item">
+                <span class="icon">G</span>
+                <span class="name">Gopay</span>
+                <span class="number">081359123789</span>
+                <button class="copy-btn" onclick="copyText('081359123789')">Copy</button>
+            </div>
+
+            <div class="payment-item">
+                <span class="icon">O</span>
+                <span class="name">Ovo</span>
+                <span class="number">0899224541403</span>
+                <button class="copy-btn" onclick="copyText('0899224541403')">Copy</button>
+            </div>
+
+            <div class="payment-item">
+                <span class="icon">S</span>
+                <span class="name">Sea Bank</span>
+                <span class="number">901324262388</span>
+                <button class="copy-btn" onclick="copyText('901324262388')">Copy</button>
+            </div>
+
+            <div class="payment-item">
+                <span class="icon">S</span>
+                <span class="name">Saweria</span>
+                <span class="number">yilziii</span>
+                <button class="copy-btn" onclick="copyText('yilziii')">Copy</button>
+            </div>
+
+            <div class="payment-item">
+                <span class="icon">B</span>
+                <span class="name">Binance</span>
+                <span class="number">93829373</span>
+                <button class="copy-btn" onclick="copyText('93829373')">Copy</button>
+            </div>
+
+            <div class="payment-item">
+                <span class="icon">P</span>
+                <span class="name">Paypal</span>
+                <span class="number">wisnuafgani@gmail.com</span>
+                <button class="copy-btn" onclick="copyText('wisnuafgani@gmail.com')">Copy</button>
             </div>
         </div>
 
-        <div class="payment-card">
-            <img src="dana.png" alt="DANA">
-            <div class="payment-info">
-                <h3>DANA <span class="highlight">DANA</span></h3>
-                <input type="text" value="1234567890" class="copy-text" readonly>
-                <button class="copy-btn" onclick="copyText(this)">Salin</button>
-            </div>
+        <div class="quick-qris">
+            <button class="qris-btn">View QR Code</button>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2025 Payment HanzX. Semua Hak Dilindungi.</p>
-    </footer>
+        <div class="notice">
+            <p>⚡ <strong>Important Notice</strong></p>
+            <p>Please ensure to double-check the account number before making any transfers.</p>
+        </div>
+    </div>
+
+    <script>
+        function copyText(text) {
+            navigator.clipboard.writeText(text);
+            alert("Copied: " + text);
+        }
+    </script>
 </body>
 </html>
